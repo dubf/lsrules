@@ -1,0 +1,174 @@
+{
+  "description" : "Enabling Gmail functionality (in the Fluid desktop web app) with minimal privacy breach.\n\nEven better would be to only allow mail.google.com & mail-ads.google.com on-demand, as they ping all the time, but I can't be bothered.",
+  "name" : "Gmail",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1643294867.995254,
+      "modificationDate" : 1643646328.4590712,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-addresses" : "2a00:1450:4001:800::200a"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1644093368.0993309,
+      "modificationDate" : 1644285554.8485541,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-hosts" : "lh3.googleusercontent.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1644093397.6259131,
+      "modificationDate" : 1644285554.850842,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-hosts" : "mail-ads.google.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643124820.882642,
+      "modificationDate" : 1643646328.461571,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-hosts" : "mail.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644093373.792624,
+      "modificationDate" : 1644187085.523279,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "aa.google.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644093411.273597,
+      "modificationDate" : 1644187085.5257139,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "appsgrowthpromo-pa.clients6.google.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644093422.6155391,
+      "modificationDate" : 1644285554.851377,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "clients6.google.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644093400.9187379,
+      "modificationDate" : 1644187077.5356679,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "contacts.google.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644093378.4893651,
+      "modificationDate" : 1644187077.538151,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "ogs.google.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644093435.3926082,
+      "modificationDate" : 1644190719.0663691,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "peoplestackwebexperiments-pa.clients6.google.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643187776.057065,
+      "modificationDate" : 1643295106.7678151,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "addons-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643298059.049412,
+      "modificationDate" : 1643646315.858942,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "chat-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643187771.127038,
+      "modificationDate" : 1643295106.768292,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "hangouts.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643298065.6279449,
+      "modificationDate" : 1643646315.8610911,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "people-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643124834.8730001,
+      "modificationDate" : 1643280882.9397202,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "play.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643059794.8191261,
+      "modificationDate" : 1643298823.9129639,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "signaler-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643124813.7656631,
+      "modificationDate" : 1643280882.940129,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "www.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643461286.828269,
+      "modificationDate" : 1644285554.8518009,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-domains" : "client-channel.google.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643114653.6808162,
+      "modificationDate" : 1643298826.887778,
+      "owner" : "any",
+      "process" : "\/Applications\/Gmail.app\/Contents\/MacOS\/FluidApp",
+      "remote-domains" : "gstatic.com"
+    }
+  ]
+}

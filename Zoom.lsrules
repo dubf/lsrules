@@ -1,0 +1,240 @@
+{
+  "description" : "Fully functional Zoom experience (barring the Zoom Apps Marketplace) without the unnecessary phoning home.",
+  "name" : "Zoom",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1644325331.14624,
+      "modificationDate" : 1644329088.9921241,
+      "owner" : "any",
+      "ports" : "3478",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "udp",
+      "remote-addresses" : "144.195.70.213"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1644325344.420944,
+      "modificationDate" : 1644329088.2515259,
+      "owner" : "any",
+      "ports" : "3479",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "udp",
+      "remote-addresses" : "144.195.70.213"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643116067.695353,
+      "modificationDate" : 1643199248.7200069,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "udp",
+      "remote-addresses" : "144.195.72.213"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643116058.801471,
+      "modificationDate" : 1643199248.722307,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "udp",
+      "remote-addresses" : "144.195.90.213"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643462587.1136031,
+      "modificationDate" : 1643465242.0512738,
+      "notes" : "zoomgov.com\n\n\n\n\nAm 29.01.2022 hat Zoom versucht eine Verbindung zu 160.1.56.156 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus verboten.",
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-addresses" : "160.1.56.156"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643116682.5435829,
+      "modificationDate" : 1643199328.6064801,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-hosts" : "eu01polling.zoom.us"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1644328847.568511,
+      "modificationDate" : 1644328880.4732299,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-hosts" : "eu01www3.zoom.us"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643116659.4026661,
+      "modificationDate" : 1643199328.6073751,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-hosts" : "eu01xmpp.zoom.us"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643116689.812499,
+      "modificationDate" : 1643199328.6082621,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-hosts" : "us04web.zoom.us"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643198978.7590489,
+      "modificationDate" : 1643199349.7943101,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-hosts" : "us04www3.zoom.us"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643198707.8820109,
+      "modificationDate" : 1643198771.2391911,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-hosts" : "us04xmpp1.zoom.us"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1644328810.3203449,
+      "modificationDate" : 1644328880.4757419,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-hosts" : "zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643198723.83638,
+      "modificationDate" : 1643198768.454123,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "contactservice.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644328844.284395,
+      "modificationDate" : 1644328874.118541,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "logfiles.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643200447.773041,
+      "modificationDate" : 1643297912.7329001,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "marketplace.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643198714.297066,
+      "modificationDate" : 1643297912.7338982,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "marketplacefront.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643200372.265923,
+      "modificationDate" : 1643295073.4954729,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "mpapis.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643198720.591702,
+      "modificationDate" : 1643200339.293395,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "us04as.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644329127.9633369,
+      "modificationDate" : 1644329184.437223,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "us04images.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643115908.8428459,
+      "modificationDate" : 1643197466.2966771,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "us04logfiles.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643198726.1890249,
+      "modificationDate" : 1643198768.45543,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "us04xmppapi.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643198729.2078161,
+      "modificationDate" : 1643200339.294054,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "us04zpns.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1644328788.828181,
+      "modificationDate" : 1644329200.042146,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "remote-hosts" : "zoomgov.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643199733.4972959,
+      "modificationDate" : 1643199733.4972959,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-domains" : "cloud.zoom.us"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643199008.4479389,
+      "modificationDate" : 1643199461.9300671,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "tcp",
+      "remote-domains" : "sjc.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643199465.053946,
+      "modificationDate" : 1643199465.053946,
+      "owner" : "any",
+      "process" : "\/Applications\/Zoom.app\/Contents\/MacOS\/zoom.us",
+      "protocol" : "udp",
+      "remote-domains" : "sjc.zoom.us"
+    }
+  ]
+}

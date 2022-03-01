@@ -1,0 +1,65 @@
+{
+  "description" : "",
+  "name" : "Don't allow macOS Services",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120854.9075971,
+      "owner" : "system",
+      "process" : "any",
+      "remote-domains" : [
+        "mzstatic.com",
+        "cdn-apple.com",
+        "apple.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "disabled" : true,
+      "modificationDate" : 1643120857.0841069,
+      "owner" : "me",
+      "process" : "any",
+      "remote-domains" : [
+        "mzstatic.com",
+        "cdn-apple.com",
+        "apple.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120859.191082,
+      "owner" : "system",
+      "ports" : "123",
+      "process" : "\/usr\/bin\/sntp",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120862.5354681,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/syspolicyd",
+      "protocol" : "tcp",
+      "remote-hosts" : "api.apple-cloudkit.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120864.6221828,
+      "owner" : "system",
+      "ports" : "123",
+      "process" : "\/usr\/libexec\/timed",
+      "protocol" : "udp",
+      "remote" : "any"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "description" : "Disable all Mac system rules. They are scandalous.",
+  "name" : "Disable factory settings",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1643298493.7665272,
+      "owner" : "system",
+      "process" : "any",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1643298493.7670269,
+      "owner" : "me",
+      "process" : "any",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1643298527.8626719,
+      "owner" : "system",
+      "process" : "any",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1643298527.8631411,
+      "owner" : "me",
+      "process" : "any",
+      "protocol" : "icmp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120846.748688,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "any",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "disabled" : true,
+      "modificationDate" : 1643120850.163604,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "any",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120854.9075971,
+      "owner" : "system",
+      "process" : "any",
+      "remote-domains" : [
+        "mzstatic.com",
+        "cdn-apple.com",
+        "apple.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "disabled" : true,
+      "modificationDate" : 1643120857.0841069,
+      "owner" : "me",
+      "process" : "any",
+      "remote-domains" : [
+        "mzstatic.com",
+        "cdn-apple.com",
+        "apple.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643298567.5663691,
+      "owner" : "system",
+      "process" : "any",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "disabled" : true,
+      "modificationDate" : 1643298567.5668969,
+      "owner" : "me",
+      "process" : "any",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643474481.3629389,
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/airportd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643295277.38606,
+      "notes" : "\n„BOOTP Daemon“ ist ein macOS Systemprozess und ein DHCP\/BOOTP\/NetBoot Server. Er verbindet sich zu Rechnern im lokalen Netzwerk, um IP-Adressen zu vergeben und weitere Aufgaben auszuführen.\n\nZugriff auf Berkeley Packet Filter\n„bootpd“ benötigt Zugriff auf den Berkeley Packet Filter von macOS.\n\n\n\n\n",
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/bootpd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1643298880.8870511,
+      "owner" : "system",
+      "ports" : "68",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643298880.8875089,
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/configd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643298880.8878942,
+      "owner" : "system",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643298880.8882608,
+      "owner" : "system",
+      "process" : "\/usr\/sbin\/mDNSResponderHelper",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643298880.888665,
+      "owner" : "system",
+      "process" : "\/usr\/sbin\/ocspd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120859.191082,
+      "owner" : "system",
+      "ports" : "123",
+      "process" : "\/usr\/bin\/sntp",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120862.5354681,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/syspolicyd",
+      "protocol" : "tcp",
+      "remote-hosts" : "api.apple-cloudkit.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120864.6221828,
+      "owner" : "system",
+      "ports" : "123",
+      "process" : "\/usr\/libexec\/timed",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643298859.602658,
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/trustd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "disabled" : true,
+      "modificationDate" : 1643705666.6048322,
+      "owner" : "me",
+      "process" : "\/usr\/libexec\/trustd",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643298880.8890409,
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/wifid",
+      "remote" : "any"
+    }
+  ]
+}

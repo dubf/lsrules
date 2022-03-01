@@ -1,0 +1,204 @@
+{
+  "description" : "",
+  "name" : "Printer",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1646169874.3839011,
+      "modificationDate" : 1646170840.301121,
+      "owner" : "any",
+      "ports" : "161",
+      "process" : "\/System\/Library\/CoreServices\/AddPrinter.app\/Contents\/MacOS\/AddPrinter",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.7",
+      "via" : "\/usr\/libexec\/cups\/backend\/snmp"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646169670.7740111,
+      "modificationDate" : 1646170840.3017111,
+      "owner" : "any",
+      "ports" : "631",
+      "process" : "\/System\/Library\/CoreServices\/AddPrinter.app\/Contents\/MacOS\/AddPrinter",
+      "protocol" : "tcp",
+      "remote-addresses" : "192.168.0.7"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646171709.6747861,
+      "modificationDate" : 1646171851.266556,
+      "owner" : "any",
+      "ports" : "631",
+      "process" : "\/System\/Library\/Printers\/Libraries\/commandInk",
+      "protocol" : "tcp",
+      "remote-hosts" : "epson735df9.local"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646170666.0696878,
+      "modificationDate" : 1646170840.302285,
+      "owner" : "any",
+      "ports" : "161",
+      "process" : "\/Library\/Printers\/EPSON\/InkjetPrinter2\/Filter\/commandtoescp.app\/Contents\/MacOS\/commandtoescp",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.7"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646170673.6893611,
+      "modificationDate" : 1646171865.8884139,
+      "owner" : "system",
+      "ports" : "631",
+      "process" : "\/usr\/libexec\/cups\/backend\/ipp",
+      "protocol" : "tcp",
+      "remote-addresses" : "192.168.0.7"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646171832.1842799,
+      "modificationDate" : 1646171832.1842799,
+      "owner" : "system",
+      "ports" : "631",
+      "process" : "\/usr\/libexec\/cups\/backend\/ipp",
+      "protocol" : "tcp",
+      "remote-hosts" : "epson735df9.local"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646171704.6701388,
+      "modificationDate" : 1646171872.0556369,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/System\/Library\/Printers\/Libraries\/ipp2ppd",
+      "protocol" : "tcp",
+      "remote-hosts" : "epson735df9.local"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646171697.1110201,
+      "modificationDate" : 1646171872.057405,
+      "owner" : "any",
+      "ports" : "631",
+      "process" : "\/System\/Library\/Printers\/Libraries\/ipp2ppd",
+      "protocol" : "tcp",
+      "remote-hosts" : "epson735df9.local"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646171385.152003,
+      "direction" : "incoming",
+      "modificationDate" : 1646171415.160934,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.3"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646170865.9639549,
+      "direction" : "incoming",
+      "modificationDate" : 1646171423.03966,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.4"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646170891.3781581,
+      "direction" : "incoming",
+      "modificationDate" : 1646171311.756567,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "fe80::7b:5183:7c5b:4178"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646171045.0229349,
+      "direction" : "incoming",
+      "modificationDate" : 1646171311.7582521,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "fe80::a6ee:57ff:fe73:5df9"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646171385.152003,
+      "direction" : "incoming",
+      "modificationDate" : 1646171399.7096381,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "fe80::c4f:ded0:a69e:3429"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646170912.2692771,
+      "direction" : "incoming",
+      "modificationDate" : 1646170912.2692771,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.2"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646170912.2692771,
+      "direction" : "incoming",
+      "modificationDate" : 1646170912.2692771,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.7"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646170945.344043,
+      "modificationDate" : 1646170945.344043,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "224.0.0.251"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646170953.3265529,
+      "modificationDate" : 1646170953.3265529,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "ff02::fb"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646173727.3648009,
+      "modificationDate" : 1646173743.8979669,
+      "owner" : "any",
+      "ports" : "631",
+      "process" : "\/System\/Library\/Frameworks\/ApplicationServices.framework\/Versions\/A\/Frameworks\/PrintCore.framework\/Versions\/A\/printtool",
+      "protocol" : "tcp",
+      "remote-hosts" : "epson735df9.local"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646170658.5899482,
+      "modificationDate" : 1646170851.4798441,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/Applications\/System Preferences.app\/Contents\/MacOS\/System Preferences",
+      "protocol" : "tcp",
+      "remote-addresses" : "192.168.0.7"
+    }
+  ]
+}

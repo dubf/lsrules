@@ -1,0 +1,217 @@
+{
+  "description" : "Enabling Google Calendar functionality (in the Fluid desktop web app) with minimal privacy breach.",
+  "name" : "Google Calendar",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1643653937.5865622,
+      "modificationDate" : 1643653979.294203,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-addresses" : "2a00:1450:4001:82f::200e",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643460527.7317672,
+      "modificationDate" : 1643646240.449214,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-addresses" : "142.250.181.202"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643646141.545537,
+      "modificationDate" : 1643646240.4526482,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-hosts" : "calendar-pa.clients6.google.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643460612.9692001,
+      "modificationDate" : 1643646240.453846,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-hosts" : "calendar.google.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643646025.096175,
+      "modificationDate" : 1643646240.4530621,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "protocol" : "tcp",
+      "remote-hosts" : "lh3.googleusercontent.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643674037.513514,
+      "modificationDate" : 1644187071.877697,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "maps.googleapis.com",
+      "via" : "\/System\/Library\/Frameworks\/WebKit.framework\/Versions\/A\/XPCServices\/com.apple.WebKit.Networking.xpc\/Contents\/MacOS\/com.apple.WebKit.Networking"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643479133.9790649,
+      "modificationDate" : 1643646240.4542398,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "aa.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643461149.2783899,
+      "modificationDate" : 1643646205.491986,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "addons-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643646144.2706771,
+      "modificationDate" : 1643646259.1851611,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "apis.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643115850.2621841,
+      "modificationDate" : 1643280889.3655729,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "cdn.cookielaw.org"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643646149.1074009,
+      "modificationDate" : 1643646259.186101,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "contacts.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643646131.998194,
+      "modificationDate" : 1643646259.1868839,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "fonts.googleapis.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643646091.8003402,
+      "modificationDate" : 1643646240.454628,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "ogs.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643464141.7619481,
+      "modificationDate" : 1643646205.4924831,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "peoplestack-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643463256.119559,
+      "modificationDate" : 1643646205.4929872,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "peoplestackwebexperiments-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643646137.0971799,
+      "modificationDate" : 1643646259.1876411,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "play.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643646153.4564719,
+      "modificationDate" : 1643646240.4550109,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "reminders-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643460653.207818,
+      "modificationDate" : 1643646212.1722291,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "signaler-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643115855.328614,
+      "modificationDate" : 1643188045.56129,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "static.ada.support"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643475083.2892199,
+      "modificationDate" : 1643646212.1747921,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "tasks-pa.clients6.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643460597.689132,
+      "modificationDate" : 1643646212.175364,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "www.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643116168.6759372,
+      "modificationDate" : 1643188045.563024,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "zoom.ada.support"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643059818.2981329,
+      "disabled" : true,
+      "modificationDate" : 1643646240.4554491,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "play.google.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643115695.796519,
+      "modificationDate" : 1643280889.3679471,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-hosts" : "tu-berlin.zoom.us"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643114576.889631,
+      "modificationDate" : 1643646240.456847,
+      "owner" : "any",
+      "process" : "\/Applications\/Google Calendar.app\/Contents\/MacOS\/FluidApp",
+      "remote-domains" : "gstatic.com"
+    }
+  ]
+}

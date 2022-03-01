@@ -1,0 +1,34 @@
+{
+  "description" : "",
+  "name" : "No iCloud",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1643057735.3899031,
+      "disabled" : true,
+      "modificationDate" : 1643120846.748688,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "any",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643059465.0858378,
+      "disabled" : true,
+      "modificationDate" : 1643120850.163604,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "any",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "icloud-content.com",
+        "icloud.com"
+      ]
+    }
+  ]
+}
