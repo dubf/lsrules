@@ -1,2 +1,2 @@
 # lsrules
-Exported Rules for Little Snitch.
+Exported rules for Little Snitch.
