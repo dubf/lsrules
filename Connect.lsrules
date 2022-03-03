@@ -1,0 +1,466 @@
+{
+  "description" : "",
+  "name" : "Connect",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1645185552.934509,
+      "modificationDate" : 1645185762.864316,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/adprivacyd",
+      "protocol" : "tcp",
+      "remote-hosts" : "bag.itunes.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646318508.164597,
+      "modificationDate" : 1646318508.164597,
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/airportd",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645185440.3870878,
+      "modificationDate" : 1645185759.2305021,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/AuthKit.framework\/Versions\/A\/Support\/akd",
+      "protocol" : "tcp",
+      "remote-hosts" : "gsa.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645387612.6599169,
+      "modificationDate" : 1645387612.6599169,
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/captiveagent",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645185432.0355859,
+      "modificationDate" : 1645185752.973213,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GeoServices.framework\/Versions\/A\/XPCServices\/com.apple.geod.xpc\/Contents\/MacOS\/com.apple.geod",
+      "protocol" : "tcp",
+      "remote-hosts" : "configuration.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645337529.6765928,
+      "modificationDate" : 1645953146.4790468,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GeoServices.framework\/Versions\/A\/XPCServices\/com.apple.geod.xpc\/Contents\/MacOS\/com.apple.geod",
+      "protocol" : "tcp",
+      "remote-domains" : "ls.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645979982.036572,
+      "modificationDate" : 1645979982.036572,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/SafariSafeBrowsing.framework\/Versions\/A\/com.apple.Safari.SafeBrowsing.Service",
+      "protocol" : "tcp",
+      "remote-hosts" : "safebrowsing.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645186009.4598551,
+      "direction" : "incoming",
+      "modificationDate" : 1645186925.9963489,
+      "notes" : "\nDer Router!\n\nDie eingehende Verbindung von dieser Adresse muss ich akzeptieren um IPv6 benutzen zu können — und bei Macs dafür um überhaupt Internet zu haben.\n\n\n––––––––––––––––\nAm 18.02.2022 hat ein Computer mit der IP-Adresse fe80::5667:51ff:fe7f:450b versucht eine eingehende Verbindung zu configd auf UDP-Port 546 (dhcpv6-client) herzustellen. Die Anfrage wurde automatisch verboten , da diese Art von Verbindungen nicht verzögert werden kann.",
+      "owner" : "system",
+      "ports" : "546",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "udp",
+      "remote-addresses" : "fe80::5667:51ff:fe7f:450b"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645185759.8124089,
+      "direction" : "incoming",
+      "modificationDate" : 1645186949.251091,
+      "notes" : "\nDer Router!\n\nDie eingehende IPv6-ICMP-Verbindung von dieser Adresse muss ich akzeptieren um IPv6 benutzen zu können — und bei Macs dafür um überhaupt Internet zu haben.\n\n\n––––––––––––––\nAm 18.02.2022 hat ein Computer mit der IP-Adresse fe80::5667:51ff:fe7f:450b versucht eine eingehende Verbindung zu configd mittels IPV6-ICMP-Protokoll herzustellen. Die Anfrage wurde automatisch verboten , da diese Art von Verbindungen nicht verzögert werden kann.",
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "ipv6-icmp",
+      "remote-addresses" : "fe80::5667:51ff:fe7f:450b"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645185468.5949621,
+      "direction" : "incoming",
+      "modificationDate" : 1646317340.193681,
+      "notes" : "\nDer Router!\n\nDie eingehende Verbindung von dieser Adresse muss ich akzeptieren um IPv4 benutzen zu können — also um überhaupt Internet haben zu können.\n\n\n",
+      "owner" : "system",
+      "ports" : "68",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645185900.191222,
+      "modificationDate" : 1645953445.1339741,
+      "notes" : "\nZum Router!\n\nDie ausgehende Verbindung zu dieser Adresse muss ich akzeptieren um IPv6 aufsetzen zu können — und bei Macs dadurch um überhaupt Internet zu haben.\n\n\n––––––––––––––––\nAm 18.02.2022 hat configd versucht eine Verbindung zu ff02::1:2 auf UDP-Port 547 (dhcpv6-server) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "system",
+      "ports" : "547",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "udp",
+      "remote-addresses" : "ff02::1:2"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645184975.689666,
+      "modificationDate" : 1645187051.413527,
+      "notes" : "\nZum Router!\n\nDie ausgehende IPv6-ICMP-Verbindung zu dieser Adresse muss ich akzeptieren um IPv6 aufsetzen zu können — und bei Macs dafür um überhaupt Internet zu haben.\n\n\n––––––––––––––––\nAm 18.02.2022 hat configd versucht eine Verbindung zu ff02::2 mittels IPV6-ICMP-Protokoll herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "ipv6-icmp",
+      "remote-addresses" : "ff02::2"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645980235.2225761,
+      "modificationDate" : 1645980235.2225761,
+      "owner" : "system",
+      "ports" : "67",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645185494.909209,
+      "modificationDate" : 1645187126.4193799,
+      "notes" : "\nBraucht configd unbedingt um die Internetverbindung aufsetzen zu können.\n\n\n––––––––––\nDer „configd“ ist für viele Aspekte der Konfiguration von macOS verantwortlich. Ohne diese Regel können keine WiFi-Verbundungen hergestellt werden.\n",
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/configd",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646318523.0275199,
+      "modificationDate" : 1646318523.0275199,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/HelpData.framework\/Versions\/A\/Resources\/helpd",
+      "protocol" : "tcp",
+      "remote-hosts" : "cds.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646318523.0275199,
+      "modificationDate" : 1646318523.0275199,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/HelpData.framework\/Versions\/A\/Resources\/helpd",
+      "protocol" : "tcp",
+      "remote-hosts" : "help.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645188148.34815,
+      "modificationDate" : 1645974658.0748529,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/System\/Library\/PrivateFrameworks\/IMCore.framework\/imagent.app\/Contents\/MacOS\/imagent",
+      "protocol" : "tcp",
+      "remote-hosts" : "init-p01md.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645304040.670063,
+      "modificationDate" : 1645304040.670063,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/keyboardservicesd",
+      "protocol" : "tcp",
+      "remote-hosts" : "configuration.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645974339.1672421,
+      "direction" : "incoming",
+      "modificationDate" : 1645974339.1672421,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645188574.3489962,
+      "modificationDate" : 1645188574.3489962,
+      "owner" : "system",
+      "ports" : "53",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "2a02:8109:b63f:e411:5667:51ff:fe7f:450b"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645185055.4804449,
+      "modificationDate" : 1645185055.4804449,
+      "owner" : "system",
+      "ports" : "53",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "9.9.9.9"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645184981.9057941,
+      "disabled" : true,
+      "modificationDate" : 1645185255.8284202,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "224.0.0.251"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645185027.3733349,
+      "disabled" : true,
+      "modificationDate" : 1645185255.8301439,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "ff02::fb"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645185515.5309539,
+      "modificationDate" : 1645185561.9096289,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "224.0.0.251"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1645185524.83781,
+      "modificationDate" : 1645185524.83781,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "ff02::fb"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645304079.6969061,
+      "modificationDate" : 1646318572.833349,
+      "owner" : "any",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646318598.5620761,
+      "modificationDate" : 1646318598.5620761,
+      "owner" : "system",
+      "process" : "\/usr\/sbin\/mDNSResponderHelper",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645348554.4927731,
+      "modificationDate" : 1645348554.4927731,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-addresses" : "17.253.57.203"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645185078.4429231,
+      "modificationDate" : 1645185356.016187,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-hosts" : "updates.cdn-apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645304053.034024,
+      "modificationDate" : 1645304053.034024,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-hosts" : "mesu.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645304053.034024,
+      "modificationDate" : 1645304053.034024,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-hosts" : "valid.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645348570.051868,
+      "modificationDate" : 1645348570.051868,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CoreParsec.framework\/parsecd",
+      "protocol" : "tcp",
+      "remote-hosts" : "api.smoot.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645979635.9246411,
+      "modificationDate" : 1645979635.9246411,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/rtcreportingd",
+      "protocol" : "tcp",
+      "remote-hosts" : "pancake.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645331982.9531031,
+      "modificationDate" : 1645974590.5702429,
+      "owner" : "any",
+      "ports" : "8770",
+      "process" : "\/usr\/libexec\/sharingd",
+      "protocol" : "tcp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645188213.6780009,
+      "modificationDate" : 1645974612.118247,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/System\/Library\/PrivateFrameworks\/MessagesKit.framework\/Versions\/A\/Resources\/soagent.app\/Contents\/MacOS\/soagent",
+      "protocol" : "tcp",
+      "remote-hosts" : "init-p01md.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646318618.2835531,
+      "modificationDate" : 1646318618.2835531,
+      "owner" : "system",
+      "process" : "\/System\/Library\/CoreServices\/Software Update.app\/Contents\/Resources\/softwareupdated",
+      "remote-hosts" : "swscan.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645974557.6680379,
+      "modificationDate" : 1645974557.6680379,
+      "owner" : "any",
+      "ports" : "5353",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "224.0.0.251"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645974557.6680379,
+      "modificationDate" : 1645974557.6680379,
+      "owner" : "any",
+      "ports" : "5353",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "ff02::fb"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645974557.6680379,
+      "modificationDate" : 1645974557.6680379,
+      "owner" : "any",
+      "ports" : "57621",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645374081.898946,
+      "modificationDate" : 1645374081.898946,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/syspolicyd",
+      "protocol" : "tcp",
+      "remote-hosts" : "api.apple-cloudkit.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645185018.8369961,
+      "modificationDate" : 1645974632.4316158,
+      "owner" : "any",
+      "ports" : "192",
+      "process" : "\/System\/Library\/CoreServices\/SystemUIServer.app\/Contents\/MacOS\/SystemUIServer",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645185069.140897,
+      "modificationDate" : 1645185337.464973,
+      "owner" : "system",
+      "ports" : "123",
+      "process" : "\/usr\/libexec\/timed",
+      "protocol" : "udp",
+      "remote-hosts" : "time-macos.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645186512.7821651,
+      "modificationDate" : 1645959345.6184201,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/usr\/libexec\/trustd",
+      "protocol" : "tcp",
+      "remote-hosts" : "ocsp.apple.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645374064.387826,
+      "modificationDate" : 1645374064.387826,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/usr\/libexec\/trustd",
+      "protocol" : "tcp",
+      "remote-hosts" : "ocsp.pki.goog"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645374064.387826,
+      "modificationDate" : 1645374064.387826,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/usr\/libexec\/trustd",
+      "protocol" : "tcp",
+      "remote-hosts" : "ocsp.sectigo.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1645374064.387826,
+      "modificationDate" : 1645374064.387826,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/usr\/libexec\/trustd",
+      "protocol" : "tcp",
+      "remote-hosts" : "ocsp.usertrust.com"
+    }
+  ]
+}

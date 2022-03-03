@@ -1,0 +1,102 @@
+{
+  "description" : "",
+  "name" : "AirDrop (Base)",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1646316640.4767032,
+      "direction" : "incoming",
+      "modificationDate" : 1646316640.4767032,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "fe80::1"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646316640.4767032,
+      "direction" : "incoming",
+      "modificationDate" : 1646316640.4767032,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "fe80::404a:13ff:feee:df85"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646316640.4767032,
+      "direction" : "incoming",
+      "modificationDate" : 1646316640.4767032,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.2-192.168.0.7"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646316640.4767032,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1646316640.4767032,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646316651.2092319,
+      "modificationDate" : 1646316651.2092319,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "ff02::fb"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646316651.2092319,
+      "modificationDate" : 1646316651.2092319,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote-addresses" : "224.0.0.251"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646316651.2092319,
+      "modificationDate" : 1646316651.2092319,
+      "owner" : "system",
+      "ports" : "5353",
+      "process" : "\/usr\/sbin\/mDNSResponder",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646316669.815227,
+      "direction" : "incoming",
+      "modificationDate" : 1646316669.815227,
+      "owner" : "any",
+      "ports" : "8770",
+      "process" : "\/usr\/libexec\/sharingd",
+      "protocol" : "tcp",
+      "remote-addresses" : "fe80::404a:13ff:feee:df85"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646316669.815227,
+      "modificationDate" : 1646316669.815227,
+      "owner" : "any",
+      "ports" : "8770",
+      "process" : "\/usr\/libexec\/sharingd",
+      "protocol" : "tcp",
+      "remote-hosts" : "f-mbp.local"
+    }
+  ]
+}
