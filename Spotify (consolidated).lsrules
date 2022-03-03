@@ -441,6 +441,16 @@
       "remote-addresses" : "192.168.165.165"
     },
     {
+      "action" : "deny",
+      "creationDate" : 1646319253.4304161,
+      "modificationDate" : 1646319253.4304161,
+      "owner" : "any",
+      "ports" : "57621",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.255"
+    },
+    {
       "action" : "allow",
       "creationDate" : 1622122025.301877,
       "disabled" : true,
@@ -1137,30 +1147,6 @@
     },
     {
       "action" : "allow",
-      "creationDate" : 1645072938.252501,
-      "disabled" : true,
-      "modificationDate" : 1646176106.895865,
-      "notes" : "\n35.186.224.25\n\nist die Hauptaddresse von Spotify.\n\n(Wird auch als Systemprozess betrachtet in Little Snitch!)\n\nSie umfasst:\n- spclient.wg.spotify.com (der zeit- & datenintensivste Domain)\n- api.spotify.com\n- api-partner.spotify.com\n- clienttoken.spotify.com\n- login5.spotify.com\n\naber auch\n- bloodhound.spotify.com\n- adeventtracker.spotify.com \n(ohne die Spotify einfach keine Musik spielt)\n\nDies umfasst die wichtigsten Dienstleistungen: \nclient activity & interface, sowie login, authentification & advertising (vs. Premium users).\n\n\nBemerke ihre Reverse DNS-Name:\n\n25.224.186.35.bc.googleusercontent.com\n\nSpotify gehört seit 2019 zu Google und befindet sich großenteils auf Google Cloud!\n\n\n",
-      "owner" : "any",
-      "ports" : "443",
-      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
-      "protocol" : "tcp",
-      "remote-hosts" : "spclient.wg.spotify.com"
-    },
-    {
-      "action" : "allow",
-      "creationDate" : 1621564288.156987,
-      "disabled" : true,
-      "modificationDate" : 1646176106.897167,
-      "notes" : "\n35.186.224.25\n\nist die Hauptaddresse von Spotify.\n\n(Wird auch als Systemprozess betrachtet in Little Snitch!)\n\nSie umfasst:\n- spclient.wg.spotify.com (der zeit- & datenintensivste Domain)\n- api.spotify.com\n- api-partner.spotify.com\n- clienttoken.spotify.com\n- login5.spotify.com\n\naber auch\n- bloodhound.spotify.com\n- adeventtracker.spotify.com \n(ohne die Spotify einfach keine Musik spielt)\n\nDies umfasst die wichtigsten Dienstleistungen: \nclient activity & interface, sowie login, authentification & advertising (vs. Premium users).\n\n\nBemerke ihre Reverse DNS-Name:\n\n25.224.186.35.bc.googleusercontent.com\n\nSpotify gehört seit 2019 zu Google und befindet sich großenteils auf Google Cloud!\n\n\n",
-      "owner" : "any",
-      "ports" : "443",
-      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
-      "protocol" : "tcp",
-      "remote-hosts" : "spclient.wg.spotify.com"
-    },
-    {
-      "action" : "allow",
       "creationDate" : 1621380682.280123,
       "disabled" : true,
       "modificationDate" : 1646178405.133965,
@@ -1183,17 +1169,9 @@
     {
       "action" : "ask",
       "creationDate" : 1621970649.6934891,
-      "modificationDate" : 1622244310.1327782,
+      "disabled" : true,
+      "modificationDate" : 1646320532.62743,
       "notes" : "\n35.186.224.25\n\nist die Hauptaddresse von Spotify.\n\nSie umfasst:\n- spclient.wg.spotify.com (der zeit- & datenintensivste Domain)\n- api.spotify.com\n- api-partner.spotify.com\n- login5.spotify.com\naber auch\n- bloodhound.spotify.com\n- adeventtracker.spotify.com \n(ohne die Spotify einfach keine Musik spielt)\n\n\nBemerke ihre Reverse DNS-Name:\n\n25.224.186.35.bc.googleusercontent.com\n\nSpotify gehört seit 2019 zu Google und befindet sich großenteils auf Google Cloud!\n\n\n",
-      "owner" : "any",
-      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
-      "protocol" : "tcp",
-      "remote-hosts" : "spclient.wg.spotify.com"
-    },
-    {
-      "action" : "ask",
-      "creationDate" : 1621972334.842237,
-      "modificationDate" : 1622244310.1332722,
       "owner" : "any",
       "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
       "protocol" : "tcp",
@@ -1400,27 +1378,12 @@
     },
     {
       "action" : "deny",
-      "creationDate" : 1629944940.0355549,
-      "modificationDate" : 1629944940.0355549,
-      "owner" : "any",
-      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
-      "remote" : "any"
-    },
-    {
-      "action" : "deny",
       "creationDate" : 1621970341.129693,
-      "modificationDate" : 1621970341.129693,
+      "disabled" : true,
+      "modificationDate" : 1646320648.9624848,
       "owner" : "any",
       "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
       "remote" : "any"
-    },
-    {
-      "action" : "deny",
-      "creationDate" : 1621543518.506798,
-      "modificationDate" : 1621550107.771173,
-      "owner" : "any",
-      "process" : "\/Applications\/Spotify.app\/Contents\/Frameworks\/Spotify Helper.app\/Contents\/MacOS\/Spotify Helper",
-      "remote-hosts" : "crashdump.spotify.com"
     }
   ]
 }
