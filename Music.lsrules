@@ -1,0 +1,1389 @@
+{
+  "description" : "",
+  "name" : "Spotify",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1622110180.9676518,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1643461812.1236548,
+      "notes" : "\n192.168.165.165\n\nMein Huawei-Smartphone!\n\n\nDer einzige, der auch eine TCP braucht,\nweil der auch wirklich Spotify spielt, \nalso auch Inhalte teilen muss.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "192.168.165.165"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643463997.437202,
+      "direction" : "incoming",
+      "modificationDate" : 1646178413.6943221,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "ask",
+      "creationDate" : 1621885745.4569921,
+      "direction" : "incoming",
+      "disabled" : true,
+      "modificationDate" : 1643464114.6797519,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.532064,
+      "modificationDate" : 1646178405.0314379,
+      "owner" : "any",
+      "priority" : "high",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "www.google.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.532541,
+      "modificationDate" : 1646178405.0323639,
+      "notes" : "\n143.204.101.*.    erlauben\n143.204.202.*   (blocken ?)\n143.204.214.*.   (blocken ?)\n\n= cloudfront.com\n\nKannst du alle erlauben.\n\n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "143.204.214.35"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5327191,
+      "modificationDate" : 1646178405.03338,
+      "notes" : "auch noch i.scdn.co??\n\n\nAm 01.02.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 151.101.210.248 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde im Netzwerkmonitor erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "151.101.210.248"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.532856,
+      "disabled" : true,
+      "modificationDate" : 1646178405.034549,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "172.217.23.98"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5329919,
+      "modificationDate" : 1646178405.035826,
+      "notes" : "\ndeploy.akamaitechnologies.com\naudio-akp-spotify-com.akamaized.net\n\nAm 01.02.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 184.31.10.33 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "184.31.10.33"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5331159,
+      "modificationDate" : 1646178405.0371032,
+      "notes" : "COVER ART\n\n\n199.232.138.248-249 (!)\n\ni.scdn.co \ndaily-images.scdn.co\n\n\nPingt alle 2,5-3,5 Minuten.\n\n\nIndem ich die drei andere IPv4 and das IPv6 erlaube,\nund 199.232.138.248 blocke,\nkrieg ich das Pingen weg,\naber auch Probleme damit, Teilen des Cover Art zu kriegen, \ninsb. das Thumbnail des gerade spielenden Songs… \n\n— Aber Spotify passt sich an, du wirst an andere IPs und Servers angeschlossen.\nNun ist es so, dass der Madrid-Server die Ping-Rolle übernommen hat\n— dafür aber muss ich nicht mehr in die US gepingt werden. \nIst eine Verbesserung.\n\nBis ich feststelle, \ndass nun viel Inhalt geblockt wird…\nMuss es erlauben!\n\n\nMadrid: 151.101.134.248\nLondon: 151.101.62.248 — pingte auch schon immer und war schon immer notwendig\n\n\n\n—\n\nEDIT:\n\nNach vielem Rumgeklüngel\npingt es zwar immer noch, aber weniger regelmäßig und frequent.\n3,5-4,5\n\nUnd was machst du dir Sorgen?\nHast du gew-dealer & spclient.wg.google.com schon mal gesehen?\nDie pingen viel heftiger.\n\n\n\n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "199.232.138.248"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.533236,
+      "modificationDate" : 1646178405.038178,
+      "notes" : "COVER ART\n\n\n199.232.138.248-249 (!)\n\ni.scdn.co \ndaily-images.scdn.co\n\n\nPingt alle 2,5-3,5 Minuten.\n\n\nIndem ich die drei andere IPv4 and das IPv6 erlaube,\nund 199.232.138.248 blocke,\nkrieg ich das Pingen weg,\naber auch Probleme damit, Teilen des Cover Art zu kriegen, \ninsb. das Thumbnail des gerade spielenden Songs… \n\n— Aber Spotify passt sich an, du wirst an andere IPs und Servers angeschlossen.\nNun ist es so, dass der Madrid-Server die Ping-Rolle übernommen hat\n— dafür aber muss ich nicht mehr in die US gepingt werden. \nIst eine Verbesserung.\n\nBis ich feststelle, \ndass nun viel Inhalt geblockt wird…\nMuss es erlauben!\n\n\nMadrid: 151.101.134.248\nLondon: 151.101.62.248 — pingte auch schon immer und war schon immer notwendig\n\n\n\n—\n\nEDIT:\n\nNach vielem Rumgeklüngel\npingt es zwar immer noch, aber weniger regelmäßig und frequent.\n3,5-4,5\n\nUnd was machst du dir Sorgen?\nHast du gew-dealer & spclient.wg.google.com schon mal gesehen?\nDie pingen viel heftiger.\n\n\n\n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "199.232.138.249"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.533355,
+      "modificationDate" : 1646178405.0391331,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "199.232.22.248"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176600.932523,
+      "modificationDate" : 1646178405.040066,
+      "notes" : "COVER ART\n\n\n199.232.66.248\n\ni.scdn.co\nnewjams-images.scdn.co\nupgrade.scdn.co",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "199.232.66.248"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.533474,
+      "modificationDate" : 1646178405.0409789,
+      "notes" : "COVER ART\n\n\n199.232.82.248\n\ni.scdn.co\naudio4-fa.scdn.co\nseeded-session-images.scdn.co\nmosaic.scdn.co\nthisis-images.scdn.co\n\n\nViele Thumbnails in Playlisten werden geblockt.\nEinige Arts von Playlists, aber irgendwann kommen sie doch.\n\nMusik stoppt jedoch irgendwann (nachdem der Buffer durch ist wss).\nVieles spielt dann noch,\naber mancher Inhalt ist nicht mehr verfügbar.\n\nAlso muss erlaubt werden. Ist zu tiefgreifend.\n\n\n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "199.232.82.248"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5338521,
+      "modificationDate" : 1646178405.04195,
+      "notes" : "2.19.35.65",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2.19.35.65"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.533963,
+      "modificationDate" : 1646178405.0432401,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "216.58.212.129"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5340559,
+      "modificationDate" : 1646178405.0444632,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "216.58.212.162"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5341902,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0455298,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "23.32.238.75"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5343208,
+      "disabled" : true,
+      "modificationDate" : 1646178405.046382,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "23.37.42.132"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646178449.435029,
+      "modificationDate" : 1646178531.203794,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2600:1480:3000:21::"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5344429,
+      "modificationDate" : 1646178405.047271,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2600:1480:4000:21::"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5345712,
+      "modificationDate" : 1646178405.048209,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2600:1901:0:524d::"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5347481,
+      "modificationDate" : 1646178405.0491171,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2600:1901:1:5ca::"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5348849,
+      "modificationDate" : 1646178405.050225,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2600:1901:1:a98::"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5349941,
+      "modificationDate" : 1646178405.0515461,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2600:1901:1:c36::"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5351429,
+      "modificationDate" : 1646178405.052736,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2602:803:c004:200::141"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5353069,
+      "modificationDate" : 1646178405.0539942,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2602:803:c004:200::152"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1642040124.8606138,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0560021,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2a04:4e42:54::760"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1642039303.3676281,
+      "disabled" : true,
+      "modificationDate" : 1646178405.056848,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2a04:4e42:62::760"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1639267563.04405,
+      "disabled" : true,
+      "modificationDate" : 1646178405.057678,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2a04:4e42:6f::760"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621552676.6526899,
+      "disabled" : true,
+      "modificationDate" : 1646178405.058955,
+      "notes" : "3.0.113.128",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "3.0.113.128"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.535567,
+      "modificationDate" : 1646178405.0601768,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "34.98.74.57"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5356741,
+      "modificationDate" : 1646178405.0613241,
+      "notes" : "35.186.224.25\n\nspclient.wg.spotify.com\nlogin5.spotify.com\n\nErlauben, essenziell!!\nIst die Hauptadresse von Spotify.\n\n\n\n\nABER\n\n35.186.224.40\ngew1-dealer.spotify.com\n35.186.224.18\ngew1-spclient.spotify.com\n\nblockieren??",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "35.186.224.25"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622188073.3956161,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0622449,
+      "notes" : "46.236.13.147\n\n\n\n\n\n\nAm 28.05.2021 hat Spotify via Spotify Helper versucht eine Verbindung zu 46.236.13.147 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "46.236.13.147"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.535774,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0630569,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "69.173.144.140"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5358791,
+      "modificationDate" : 1646178405.0639639,
+      "notes" : "\ndeploy.akamaitechnologies.com\n\nAm 31.01.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 92.122.244.24 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "92.122.244.24"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622122107.881722,
+      "modificationDate" : 1646178405.064851,
+      "notes" : "Mit \n\nIP 239.255.255.250 \nPort 1900\nProtocol SSDP\n\nwerden andere kontrollierbare Geräte gesucht.\n\nSo kann Spotify sehen, ob ein anderes Gerät von dir auch gerade Spotify benutzt, und kannst du bspw. mit deinem Handy Spotify auf deinem Laptop, der über die Stereoanlage lautet, kontrollieren, wie eine Art globale Fernbedienung.\n\nKannst du ausschalten wenn du’s nicht willst\/brauchst.\n",
+      "owner" : "any",
+      "ports" : "1900",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "239.255.255.250"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1643464063.3302391,
+      "disabled" : true,
+      "modificationDate" : 1643464094.2862029,
+      "notes" : "Mit \n\nIP 239.255.255.250 \nPort 1900\nProtocol SSDP\n\nwerden andere kontrollierbare Geräte gesucht.\n\nSo kann Spotify sehen, ob ein anderes Gerät von dir auch gerade Spotify benutzt, und kannst du bspw. mit deinem Handy Spotify auf deinem Laptop, der über die Stereoanlage lautet, kontrollieren, wie eine Art globale Fernbedienung.\n\nKannst du ausschalten wenn du’s nicht willst\/brauchst.\n",
+      "owner" : "any",
+      "ports" : "1900",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "239.255.255.250"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5359979,
+      "modificationDate" : 1646178405.0657349,
+      "owner" : "any",
+      "ports" : "4070",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "104.199.65.124"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622122098.965724,
+      "modificationDate" : 1646178405.066988,
+      "notes" : "224.0.0.251\n\n.local Domain mDNS requests",
+      "owner" : "any",
+      "ports" : "5353",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "224.0.0.251"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622122110.1075702,
+      "modificationDate" : 1646178405.0681992,
+      "notes" : "ff02::fb\n\nlocal-link requests",
+      "owner" : "any",
+      "ports" : "5353",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "ff02::fb"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622039951.7845411,
+      "disabled" : true,
+      "modificationDate" : 1643463368.0497169,
+      "notes" : "Für Spotify Connect: \nausgewählte lokale Geräte.\n\n192.168.165.255   Broadcast (last number)\n\n192.168.165.165   Android Phone (Huawei) — die Fernbedienung\nPort: 56721\n\nDies wird zu meinem Handy verbinden!",
+      "owner" : "any",
+      "ports" : "56721",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.165.165"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646319253.4304161,
+      "modificationDate" : 1646319253.4304161,
+      "owner" : "any",
+      "ports" : "57621",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.0.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622122025.301877,
+      "disabled" : true,
+      "modificationDate" : 1643463368.0535011,
+      "notes" : "Für Spotify Connect: \nausgewählte lokale Geräte.\n\n192.168.165.255   Broadcast (last number)\n\n192.168.165.165   Android Phone (Huawei) — die Fernbedienung\nPort: 56721\n\nDies wird zu meinem Handy verbinden!\n\n\n\n\n\nAm 27.05.2021 hat Spotify versucht eine Verbindung zu 192.168.165.255 auf UDP-Port 57621 herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus verboten.",
+      "owner" : "any",
+      "ports" : "57621",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "192.168.165.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622555342.1959171,
+      "disabled" : true,
+      "modificationDate" : 1646177361.4035211,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "9.9.9.9"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5360479,
+      "modificationDate" : 1646178405.0693431,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "151.101.210.248"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5360999,
+      "modificationDate" : 1646178405.0702472,
+      "notes" : "fbcdn\n\n\nAm 29.01.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 179.60.192.7 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus verboten.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "179.60.192.7"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622234882.1124802,
+      "modificationDate" : 1646178405.071106,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "184.86.251.202"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622227077.8582978,
+      "modificationDate" : 1646178405.0719981,
+      "notes" : "Am 28.05.2021 hat Spotify via Spotify Helper versucht eine Verbindung zu 216.58.198.196 auf UDP-Port 443 (quic) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.\n\n\n= www.google.com",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "216.58.198.196"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5361428,
+      "modificationDate" : 1646178405.0728989,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "216.58.207.194"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622234685.6217639,
+      "modificationDate" : 1646178405.0736918,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "23.196.197.187"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5362029,
+      "modificationDate" : 1646178405.074754,
+      "notes" : "2600:1480:4000:21::\n\nUSA.\n\n\nScheint aber intensiv benutzt zu werden!\nVielleicht nötig.\n\nEDIT (am gleichen Tag):\nNein, herrlich! Ich habe es noch nie geschafft, \n\t- alle Musik ohne weiteres zu hören\n\t- alle Seiten freigeschaltet und heruntergeladen\n\t- UND gar keine Werbung zu bekommen! Fantastisch.\n\n\n\n\nAm 31.01.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 2600:1480:4000:21:: auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde im Netzwerkmonitor verboten.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "2600:1480:4000:21::"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5362592,
+      "modificationDate" : 1646178405.0758891,
+      "notes" : "\nfacebook ....\n\n\nAm 29.01.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 2a00:1450:4001:809::2003 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "2a03:2880:f01f:6:face:b00c::3"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5363469,
+      "modificationDate" : 1646178405.0773668,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "35.244.159.8"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622204519.673975,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0783958,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "52.16.73.168"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622235991.321012,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0793929,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "52.17.239.19"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622235743.2018631,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0802879,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "52.19.145.179"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622234103.2911448,
+      "disabled" : true,
+      "modificationDate" : 1646178405.081182,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "52.19.198.230"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622234131.8691931,
+      "disabled" : true,
+      "modificationDate" : 1646178405.082166,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "52.31.191.243"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5363879,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0832729,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "172.217.16.130"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5365229,
+      "modificationDate" : 1646178405.0846219,
+      "notes" : "35.186.224.25\n\nspclient.wg.spotify.com\nlogin5.spotify.com\n\nErlauben, essenziell!!\nIst die Hauptadresse von Spotify.\n\n\n\nUND\n\n35.186.224.40\ngew1-dealer.spotify.com\n35.186.224.18\ngew1-spclient.spotify.com\n\nMountain View, CA\n\nAUCH.\n\nIch teste mit Erlauben, da ich diese als Domain bereits erlaubt hatte.\n\n\nEDIT 08.02.2022\nMit Erlauben scheint es prima zu laufen. \n\nGeht es auch mit Blockieren?? Vermutlich eher nicht.\n224.40 pingt sehr häufig (etwa alle 30s), das ist der Dealer.\n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "35.186.224.18, 35.186.224.40"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621532722.0612831,
+      "disabled" : true,
+      "modificationDate" : 1646177469.912282,
+      "notes" : "DNS\n\n\n84.200.69.80\n84.200.70.40\n\n\nNötig da Spotify’s Server-Infrastruktur zo konfiguriert ist, dass \nimmer neuer IP’s (mit random Namestrings) abgefragt werden müssen.\n\n\nIch mach’s mal versuchsweise ohne 9.9.9.9.\n\n\nEDIT (29.01.2022): \nGeht tatsächlich auch ohne (mit UDP zu 84.200…. an), aber ich mag Quad9 in der Schweiz.\n\nMöchte aber lieber DoT, das ist sicherer. Also blocke ich UDP zu allen DNS-Servern und erlaube dns.quad9.net",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-addresses" : "84.200.69.80, 84.200.70.40"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5366402,
+      "modificationDate" : 1646178405.086103,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "173.194.221.150-173.194.221.155"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5367079,
+      "modificationDate" : 1646178405.0873098,
+      "notes" : "37.157.6.240-255\n\n\n\nu.a. \n*.245-247 \n*.251-253\n\n\n\n\n\nAm 30.01.2022 hat Spotify via Spotify Helper versucht \neine Verbindung zu 37.157.6.252 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus verboten.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "37.157.6.240-37.157.6.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5367889,
+      "modificationDate" : 1646178405.088716,
+      "notes" : "35.186.224.* \n\naußer \n35.186.224.25 \n\n\n\n\n\n\nAm 29.01.2022 hat Spotify versucht eine Verbindung zu 35.186.224.47 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus verboten.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "35.186.224.0-35.186.224.24, 35.186.224.26-35.186.224.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622117265.8759851,
+      "disabled" : true,
+      "modificationDate" : 1646178405.089689,
+      "notes" : "173.194.188.*\n\n\nNötig für Dein Mix der Woche Cover Art.\nAlso ein Foto, das man selber hochgeladen hatte.\n\nAber ≈ *.client-channel.google.com in Gmail",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "173.194.188.0-173.194.188.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.536849,
+      "modificationDate" : 1646178405.090775,
+      "notes" : "151.101.250.*\n\nReston, Virginia.\n\n\n\n\nu.a.\n\n151.101.250.248\n\ndaily-images.scdn.co\n\n\nBlocken oder lassen?\nGing doch ohne?\n\nBlocken.\n\n",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "151.101.250.0-151.101.250.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621973355.64112,
+      "modificationDate" : 1646178405.0919409,
+      "notes" : "31.13.92.0-31.13.92.255  \nIrland\n\n31.13.92.52  \n= media-frt3-1.cdn.whatsapp.net\n\n= Facebook !!!",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "31.13.92.0-31.13.92.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622241559.771801,
+      "modificationDate" : 1646178405.0931048,
+      "notes" : "179.60.192–193.* \n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "179.60.192.0-179.60.193.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621542230.39324,
+      "modificationDate" : 1646178405.0941801,
+      "notes" : "2.16.186.0-2.16.186.255\n2.21.242.0-2.21.242.255\n\ndeploy.static.akamaitechnologies.com\n\n\nu.a.\n\n\n2.16.186.91\n2.16.186.91\n\nEuropa, und pingt nicht zu sehr. \nZudem nötig für die Funktionalität.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2.16.186.0-2.16.186.255, 2.21.242.0-2.21.242.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622188116.727807,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0950201,
+      "notes" : "\n143.204.101.*.    erlauben\n143.204.202.*   (blocken ?)\n143.204.214.*.   (blocken ?)\n\n= cloudfront.com\n\nKannst du alle erlauben.\n\n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "143.204.101.0-143.204.101.255, 143.204.202.0-143.204.202.255, 143.204.214.0-143.204.214.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621544984.249541,
+      "modificationDate" : 1646178405.0958829,
+      "notes" : "23.1.35.0-23.1.37.255\n23.1.106.0-23.1.106.255\n\n\n23.32.238-239.*\n= Apple CDN !!\n\n\t23.32.238.88\n\t23.32.238.139\n\t= osxapps.itunes.apple.com\n\n",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "23.1.35.0-23.1.37.255, 23.1.106.0-23.1.106.255, 23.32.238.0-23.32.239.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621547185.4901772,
+      "disabled" : true,
+      "modificationDate" : 1646178405.0966949,
+      "notes" : "69.173.144-154.*",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "69.173.144.0-69.173.154.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622234692.734412,
+      "disabled" : true,
+      "modificationDate" : 1646178405.097513,
+      "notes" : "188.93.173.*\n213.19.162.*\n216.58.201-215.*\n\n(incl.\n216.58.214.66 securepubads.g.doubleclick.net)\n\n\n\nDiese Verbindungen sind notwendig, \naber bedauernswert.\n\nVerbinden dich direkt mit Sunnyvale, CA, wo Google ist.\nSobald du dein WLAN und also dein external IP änderst,\nwirst du aufgefordert, eine neue IP dieser Linie zu akzeptieren,\nsonst wird alle Inhalt in Spotify gesperrt.\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "188.93.173.0-188.93.173.255, 213.19.162.0-213.19.162.255, 216.58.201.0-216.58.215.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621558631.313153,
+      "modificationDate" : 1646178405.0986261,
+      "notes" : "199.232.0-99.*\n\n\n199.232.38.248 verwerfen\n199.232.138.248-249 zulassen (!)\n\nLädt zum Beispiel Hintergrund und Artwork von Daily Drive beim Öffnen dieser Playlist.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "199.232.0.0-199.232.99.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.537024,
+      "modificationDate" : 1646178405.099896,
+      "notes" : "151.101.1-199.*\naber block: 151.101.250.* (Reston, Virginia)\n\n\nenthält u.a.\n\n151.101.134.248\t\tMadrid\n151.101.134.249\n\nHatte es mal verboten aber schien Probleme zu geben.\n\n\n151.101.62.248 \t\tLondon.\ni.scdn.co\n\nPingte auch schon immer und war schon immer notwendig.\n\n\n\n––––––\nCreated 21.05.2021\nConfirmed 01.03.2022",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "151.101.1.0-151.101.199.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.537122,
+      "modificationDate" : 1646178405.1011391,
+      "notes" : "142.250.0-202.*\n\n\nenthält u.a.\n\n142.250.185.194\tgoogletagservices.com\n142.250.185.226\tdoubleclick.net\n142.250.186.110\tgoogletagservices.com\n\n\n——————————————\n\n\n142.250.74.*\n142.250.178-179.* \n142.250.181.0-142.250.185.97\n142.250.201-202.* \n\n= Google,\nweniger wichtige Servers,\ndie alle geblockt werden können\n\n\n\n142.250.185.98-255\n142.250.186.*\n\n= Google,\nwichtige Servers,\ndie [EDIT] AUCH geblockt werden dürfen\n\n\nEDIT: Muss alles geblockt werden. :-)\n\n\nDie folgenden 3-4 werden aber weiterhin zugelassen (die Erlaubnisregel nimmt Vorrang auf eine sämtliche Verbotsregel):\n\n172.217.18.97\n172.217.18.98\n172.217.23.98\n216.58.212.129\n\n\n\n\n————————————\n\n142.250.185.*\n\t- incl. 142.250.185.98\n142.250.186.*\n\n= die wichtigsten Google Ads-Servers\n\n\n\n\n==========>> SO HALTEN!\n\nJetzt hab ich die Homepage wieder\nund das Werbefenster ist wieder leer.\n\n\n\nDer einzige von den Adservices,\nder noch erlaubt ist, \nist 216.58.212-215.* (Sunnyvale => Google).\n\nSo halten? Ein IP zulassen, sodass Google denkt, Werbung geht,\naber es nicht zulassen?\n\n\n\n\n\n——————————\n\nAlte Überlegungen:\n\n142.250.185.98-255\n142.250.186.*\n\t- nicht: 142.250.186.110 = ssl.googleanalytics.com\n\n= Einzige Ausnahmen auf die 142.250.*-Regel !\n\n\n\n142.250.185.98\nSicher dass es muss? Sieht so aus. \nSonst fehlen hier und da einige Songs.\n\n\n142.250.186.*\nMusst du nehmen,\n\nfür die Safeframe.\nDiese sind mit der Adservice verknüpft\nund erlauben so, ein leeres Fenster zu bekommen!\n\nSonst hast du Error-Text im Werbefenster!\n\n\n\n\n–––––––––––––––––––––––\nAm 29.01.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 142.250.181.226 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus verboten.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "142.250.0.0-142.250.202.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622239456.9292779,
+      "modificationDate" : 1646178405.10232,
+      "notes" : "157.240.20.*\n157.240.221.*\n\n= media-frt3-2.cdn.whatsapp.net  \n= Facebook !!!",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "157.240.0.0-157.240.255.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622240607.52616,
+      "disabled" : true,
+      "modificationDate" : 1646178405.1031499,
+      "notes" : "18.203.0.0-18.203.255.255",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "18.203.0.0-18.203.255.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622187788.0796041,
+      "disabled" : true,
+      "modificationDate" : 1646178405.1039829,
+      "notes" : "35.190.242-243.*  ap.spotify.com Domaine\n37.157.*.*   Ringsted, Denemark\n37.252.172-173.*  Europa\n\n\n\n\nUnschuldig.\n\n37.* sind ne ganze Menge sehr unterschiedliche europäische Server. \n\n\nEDIT: Habe sie gerade (Jan 2022) ausgestellt  denn mein Mini hatte sie mit guten Ergebnissen ausgeschaltet. Mal testen.\n\n\n—— \n\n104.199.64.0-104.199.65.255 = ap.spotify.com Domaine (verbrauchen etwas mehr?) & sind in USA\n\nals die andere auf  \n\n35.190.242-243.*  \n\ndessen IP ich auch mehr vertraue… \n\n104.199.*.* ist ansonsten aber unschuldig. \nKeine Verbindung zu anderen bösen Servern.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "35.190.242.0-35.190.243.255, 37.157.0.0-37.157.255.255, 37.252.172.0-37.252.173.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622240838.93523,
+      "disabled" : true,
+      "modificationDate" : 1646178405.10479,
+      "notes" : "78.46.85.*\n80.252.91.*\n81.29.72.*\n82.113.101.* \n84.200.*.*",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "78.46.85.0-78.46.85.255, 80.252.91.0-80.252.91.255, 81.29.72.0-81.29.72.255, 82.113.101.0-82.113.101.255, 84.200.0.0-84.200.255.255"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622191713.145824,
+      "modificationDate" : 1646178405.105792,
+      "notes" : "184.24.*.*\t\n184.86.*.*\n\n\n\n\n\n\nAm 28.05.2021 hat Spotify via Spotify Helper versucht eine Verbindung zu 184.86.251.202 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "184.24.0.0-184.24.255.255, 184.86.0.0-184.86.255.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621974566.8424258,
+      "modificationDate" : 1646178405.106849,
+      "notes" : "34.98.*.*\n34.243.*.*\n34.253.*.*\n\n\n\n—————\n\nu.a.\n\n34.98.64.218\n34.98.74.57\n34.243.93.*\n34.253.43.221\n\n\n\n\n––––––––––\nEDIT:\n\nMein Rule import von Mini (hat perfekt funktioniert) war konservativer:\n\n34.98.64-74.*\n\nUSA\n\nWeiß noch nicht, ob sie nicht auch notwendig sind.\n\n———\n\nu.a.\n\n34.98.64.152\n34.98.74.57\n",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "34.98.0.0-34.98.255.255, 34.243.0.0-34.243.255.255, 34.253.0.0-34.253.255.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622187883.0357029,
+      "modificationDate" : 1646178405.1080451,
+      "notes" : "74.125.*.*    = client-channel in GMail\n172.67.*.*\n172.217.*.*   = Gmail (!)\n173.194.*.*  = client-channel in Gmail …\n\n172.217.16.*  Scheint noch mehr Werbung zu sein, ist aber neben den 3-4 IPs vom 172.217.*.* Bereich nicht notwendig glaube ich.\n\n\nAber:\n\n172.217.18.97-98\n172.217.23.98\n\nzulassen (!)\n\n172.217.16.130 auch? Bisher nicht\n\n172.217.23.97 nicht!",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "74.125.0.0-74.125.255.255, 172.67.0.0-172.67.255.255, 172.217.0.0-172.217.255.255, 173.194.0.0-173.194.255.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622032107.5525351,
+      "modificationDate" : 1646178405.109246,
+      "notes" : "35.186.224.0-24\n35.186.224.26-255\n\n\nu.a.\n\n35.188.42.15        sentry.io\n\n\n\nAber:\n35.186.224.25 erlauben! \n\nDas ist die Hauptadresse von Spotify.\n",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "35.186.224.0-35.186.224.24, 35.186.224.26-35.186.224.44, 35.186.224.46-35.190.241.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621969107.7143879,
+      "modificationDate" : 1646178405.1104388,
+      "notes" : "104.20-199.*\n\n104.199.64.0-104.199.65.255\n\n= ap.spotify.com Domaine die mehr scheinen zu verbrauchen (?) \n\nals die andere auf  \n\n35.190.242-243.*\n\ndessen IP ich auch mehr vertraue… \n\n104.199 ist ansonsten aber unschuldig. Keine Verbindung zu anderen bösen Servern.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "104.20.0.0-104.199.255.255"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5373158,
+      "modificationDate" : 1646178405.1112421,
+      "notes" : "2a00:1450:4005:800::2001 \n\t\tbis\n2a00:1450:4005:803::2004\n\n\nIrland. Böse, ganz böse!  :-)",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "2a00:1450:4005:800::2001-2a00:1450:4005:803::2004"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.537467,
+      "modificationDate" : 1646178405.112061,
+      "notes" : "2a00:1450:400f:800::2001\nbis\n2a00:1450:400f:80f::2001\n\nund \n\n2a00:1450:4010:c00::\nbis\n2a00:1450:4010:c0f::ff\n\n\n\n\n—————\n\nu.a.\n2a00:1450:400f:801::2001\n2a00:1450:400f:803::2001\n2a00:1450:400f:804::2001\n2a00:1450:400f:80c::2001\n\n2a00:1450:4010:c0a::9c\n2a00:1450:4010:c0b::84\n2a00:1450:4010:c0e::9c\n\n\n\nAm 30.01.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 2a00:1450:400f:801::2001 auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2a00:1450:400f:800::2001-2a00:1450:400f:80f::2001, 2a00:1450:4010:c00::-2a00:1450:4010:c0f::ff"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5375991,
+      "modificationDate" : 1646178405.1128581,
+      "notes" : "2a00:1450:4001:800::2001\n2a00:1450:4001:83f::2004\n\n\nServer in Frankfurt.\nHier kommt die ganze Musik her glaube ich.\nGanz viele Adressen.\n\n\n\n\n————\n\nFrüher hatte ich weniger eingeschränkt:\n2a00:1450:4001:800::\n2a00:1450:4001:99f::\n\n\nHabe nun Irland rausgeholt. Der hat 4005 statt 4001 in der Adresse.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-addresses" : "2a00:1450:4001:800::2001-2a00:1450:4001:83f::2004"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5376902,
+      "modificationDate" : 1646178405.1136341,
+      "notes" : "2600:1901::\nbis\n2600:1901:1:c36::\n\nEs könnte nach hinten weitergehen.\n\nu.a.\n2600:1901:0:524d::\n2600:1901:1:c36::\n\n\nUSA.\n\n\n\n31.01.2022\n—————\n\nHerrlich, bekomme alle Musik und alle Seiten, \nund keine Werbung oder Unterbrechungen.\n\n\nEDIT (am gleichen Tag):\nNein, herrlich! Ich habe es noch nie geschafft, \n\t- alle Musik ohne weiteres zu hören\n\t- alle Seiten freigeschaltet und heruntergeladen\n\t- UND gar keine Werbung zu bekommen! Fantastisch.\n\n\n\nEDIT: \nScheint aber intensiv benutzt zu werden!\nVielleicht nötig.\n\n\n\n21.05.2021\n—————\n\nPingt unnötigerweise.\n\napi-partner.spotify.com\n\nPer IPv4 das gleiche wie die Hauptverbindung,\naber in IPv6 nicht, hah!\n\nDies ist das unterscheidende.\n\n\n\n\n–––––––––––––––––\nAm 31.01.2022 hat Spotify via Spotify Helper versucht eine Verbindung zu 2600:1901:1:c36:: auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde im Netzwerkmonitor verboten.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "2600:1901::-2600:1901:1:c36::"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5377631,
+      "modificationDate" : 1646178405.114439,
+      "notes" : "2a04:4e42::760\n\t    bis\n2a04:4e42:ff::761\n\nEuropa.\n\nAls ich diese blockierte, \nkam eine Verbindung mit sentry.io auf.\n\n\nNB: Wichtig ist, dass du konsequent bist in der Ablehnung. Wenn du doch wieder die gleiche IP-Addresse erlaubst (indem du unwissentlich die Range Block Ausnahmen verleihst), oder eine Folgeverbindung (sentry.io) erlaubst, wird der Provider die Diskrepanz bemerken und den Dienst verweigern!\n\n\n\n———————\n\nu.a.\n\n\n2a04:4e42:1c::760\n2a04:4e42:31::760\n2a04:4e42:54::760\n2a04:4e42:62::760\n2a04:4e42:62::761\n2a04:4e42:78::760\n2a04:4e42:f::760",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-addresses" : "2a04:4e42::760-2a04:4e42:ff::761"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621564288.1569719,
+      "modificationDate" : 1646178405.1155019,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "adeventtracker.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1622198898.656594,
+      "modificationDate" : 1646178405.116538,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "www.sme-advertising.de"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.537869,
+      "modificationDate" : 1646178405.117615,
+      "notes" : "Am 19.05.2021 hat Spotify via Spotify Helper versucht eine Verbindung zu api.spotify.com auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde im Netzwerkmonitor erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "ap.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1622122056.8966651,
+      "disabled" : true,
+      "modificationDate" : 1646178405.118418,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "api-partner.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.537972,
+      "modificationDate" : 1646178405.1191459,
+      "notes" : "apresolve.spotify.com \n\nist nötig für Spotify Desktop,\naber kann ohne Probleme geblockt werden auf Spotify Android.\n\nDafür jedoch muss man auf Android\n\ncanvaz.scdn.co\nmobile-ap.spotify.com\n\nerlauben.\n\n\nHabe jedoch den Eindruck, dass apresolve dafür sorgt, dass dein großer Cover Art nicht ungeladen wird wenn du lange nicht in der App bist (wenn die im Hintergrund läuft). Wieder öffnen des Songs sorgt aber immer für Abhilfe.\nM.a.W. apresolve ist eine Art Cache?",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "apresolve.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621382174.9971871,
+      "modificationDate" : 1646178405.11991,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "audio4-fa.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621564288.156882,
+      "disabled" : true,
+      "modificationDate" : 1646178405.120594,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "bloodhound.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1639248451.463969,
+      "modificationDate" : 1646178405.1213121,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "charts-images.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621971835.364012,
+      "modificationDate" : 1646178405.1220369,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "clienttoken.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621380629.084466,
+      "modificationDate" : 1646178405.1229019,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "dailymix-images.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5380721,
+      "modificationDate" : 1646178405.1239219,
+      "notes" : "Am 20.05.2021 hat Spotify via Spotify Helper versucht eine Verbindung zu dns.quad9.net auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "dns.quad9.net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.538172,
+      "modificationDate" : 1646178405.1249208,
+      "notes" : "Wenn man dies (oder dealer.spotify.com) blockt, dann können keine Artist-Seiten mehr geladen werden. Eins von den beiden MUSS zugelassen werden.\n\nDieser Domain pingt außerdem alle 30 s. \nWürde es gerne blocken, aber es geht nicht.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "gew-dealer.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5382628,
+      "modificationDate" : 1646178405.1259332,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "gew1-dealer.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5383601,
+      "modificationDate" : 1646178405.1267262,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "i.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621380916.990104,
+      "modificationDate" : 1646178405.127449,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "lineup-images.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.5384531,
+      "modificationDate" : 1646178405.128159,
+      "notes" : "Am 19.05.2021 hat Spotify via Spotify Helper versucht eine Verbindung zu login5.spotify.com auf TCP-Port 443 (https) herzustellen. Die Anfrage wurde im Netzwerkmonitor erlaubt.",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "login5.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621380970.8641319,
+      "modificationDate" : 1646178405.128911,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "misc.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621380974.810832,
+      "modificationDate" : 1646178405.129606,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "mosaic.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621380621.150198,
+      "modificationDate" : 1646178405.130285,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "newjams-images.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1639444560.8580232,
+      "modificationDate" : 1646178405.1311989,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "seed-mix-image.spotifycdn.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621397031.2814679,
+      "modificationDate" : 1646178405.132205,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "seeded-session-images.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1646176226.538563,
+      "modificationDate" : 1646178405.133142,
+      "notes" : "\n35.186.224.25\n\nist die Hauptaddresse von Spotify.\n\n(Wird auch als Systemprozess betrachtet in Little Snitch!)\n\nSie umfasst:\n- spclient.wg.spotify.com (der zeit- & datenintensivste Domain)\n- api.spotify.com\n- api-partner.spotify.com\n- clienttoken.spotify.com\n- login5.spotify.com\n\naber auch\n- bloodhound.spotify.com\n- adeventtracker.spotify.com \n(ohne die Spotify einfach keine Musik spielt)\n\nDies umfasst die wichtigsten Dienstleistungen: \nclient activity & interface, sowie login, authentification & advertising (vs. Premium users).\n\n\nBemerke ihre Reverse DNS-Name:\n\n25.224.186.35.bc.googleusercontent.com\n\nSpotify gehört seit 2019 zu Google und befindet sich großenteils auf Google Cloud!\n\n",
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "spclient.wg.spotify.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621380682.280123,
+      "disabled" : true,
+      "modificationDate" : 1646178405.133965,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "t.scdn.co"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621397019.175384,
+      "modificationDate" : 1646178405.1347961,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "thisis-images.scdn.co"
+    },
+    {
+      "action" : "ask",
+      "creationDate" : 1621970649.6934891,
+      "disabled" : true,
+      "modificationDate" : 1646320532.62743,
+      "notes" : "\n35.186.224.25\n\nist die Hauptaddresse von Spotify.\n\nSie umfasst:\n- spclient.wg.spotify.com (der zeit- & datenintensivste Domain)\n- api.spotify.com\n- api-partner.spotify.com\n- login5.spotify.com\naber auch\n- bloodhound.spotify.com\n- adeventtracker.spotify.com \n(ohne die Spotify einfach keine Musik spielt)\n\n\nBemerke ihre Reverse DNS-Name:\n\n25.224.186.35.bc.googleusercontent.com\n\nSpotify gehört seit 2019 zu Google und befindet sich großenteils auf Google Cloud!\n\n\n",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "spclient.wg.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1628531117.522579,
+      "modificationDate" : 1646178405.135519,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "csi.gstatic.com",
+      "via" : "\/Applications\/Spotify.app\/Contents\/Frameworks\/Spotify Helper.app\/Contents\/MacOS\/Spotify Helper"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5386062,
+      "modificationDate" : 1646178405.1361861,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "adservice.google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538641,
+      "modificationDate" : 1646178405.1368499,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "adservice.google.de"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5386748,
+      "modificationDate" : 1646178405.137548,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "ap-gae2.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538707,
+      "modificationDate" : 1646178405.1381459,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "ap-gew1.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538738,
+      "modificationDate" : 1646178405.1388969,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "ap-guc3.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538769,
+      "modificationDate" : 1646178405.1398401,
+      "notes" : "Am 19.05.2021 hat Spotify versucht eine Verbindung zu gew1-accesspoint-e-jk1g.ap.spotify.com auf TCP-Port 4070 herzustellen. Die Anfrage wurde aus einer Verbindungswarnung heraus erlaubt.",
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "ap.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621381603.6927929,
+      "disabled" : true,
+      "modificationDate" : 1646178405.1406269,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "audio4-akp-spotify-com.akamaized.net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5388,
+      "modificationDate" : 1646178405.1415958,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "dealer.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621556510.341346,
+      "disabled" : true,
+      "modificationDate" : 1646178405.142489,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "gew-spclient.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1643460363.2959452,
+      "disabled" : true,
+      "modificationDate" : 1646178405.14311,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "gew1-spclient.spotify.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538831,
+      "modificationDate" : 1646178405.1437349,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "pagead2.googlesyndication.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5388629,
+      "modificationDate" : 1646178405.1443229,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "securepubads.g.doubleclick.net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538898,
+      "modificationDate" : 1646178405.1449351,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "sentry.io"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5389299,
+      "modificationDate" : 1646178405.14554,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "update.googleapis.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621380889.127073,
+      "modificationDate" : 1646178405.146131,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-hosts" : "upgrade.scdn.co"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538964,
+      "modificationDate" : 1646178405.1467781,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote-domains" : "safeframe.googlesyndication.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621381145.4488471,
+      "disabled" : true,
+      "modificationDate" : 1646178405.147563,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-domains" : "akamaized.net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1621381279.468255,
+      "disabled" : true,
+      "modificationDate" : 1646178405.1483831,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-domains" : "akamaized.net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.538986,
+      "modificationDate" : 1646178405.1493258,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5390821,
+      "modificationDate" : 1646178405.150146,
+      "owner" : "any",
+      "ports" : "53",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5391688,
+      "modificationDate" : 1646178405.150862,
+      "owner" : "any",
+      "ports" : "80",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1646176226.5392389,
+      "modificationDate" : 1646178405.1514549,
+      "owner" : "any",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1621970341.129693,
+      "disabled" : true,
+      "modificationDate" : 1646320648.9624848,
+      "owner" : "any",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "remote" : "any"
+    }
+  ]
+}
